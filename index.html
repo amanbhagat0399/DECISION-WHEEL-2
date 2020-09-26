@@ -10,9 +10,9 @@
 
 <body>
     <div>
-            <h1> Decision Making Tree</h1>
-            <br>
             <div class="buttons">
+                <h1> Decision Making Tree</h1>
+                <br>
 
                 <div class="row4">
                     <button class="btn" type="button" onclick="show(this)" id="b1"> 1. Problem </button>
@@ -36,11 +36,11 @@
 
                     <button class="btn" type="button " onclick="show(this)" id="b9" disabled> 9. Assess Decision
                     </button>
-                    <button class="btn" type="button " onclick="show(this)" id="b10" disabled>10. Preview / Back </button>
+                    <button class="btn" type="button " onclick="changehtml()" id="b10" >10. Preview  </button>
                     </button>
                 </div>
                 <div class="row4">
-                    <button class="btn" type="button" onclick="changehtml()" id="b11" >SUBMIT</button>
+                    <button class="btn" type="button" onclick="submission()" id="b11" disabled>SUBMIT</button>
                 </div>
             </div>
 
@@ -56,7 +56,7 @@
                         <textarea id="txtarea" name="message"></textarea>
                     </div>
                     <div class="modal-footer">
-                        <div>
+                        <div class="submitbutton">
                             <button class="s1" type="button" onclick="storingAnswers()">Submit</button>
                         </div>
                     </div>
@@ -81,7 +81,7 @@
                         </div>
                     </div>
                     <div class="modal-footer2">
-                        <div>
+                        <div class="submitbutton">
                             <button class="s1" type="button" onclick="storingAnswers()">Submit</button>
                         </div>
                     </div>
@@ -106,10 +106,10 @@
                         </div>
                     </div>
                     <div class="modal-footer3">
-                        <div>
-                            <button class="s1" id="s0" type="button" onclick="bck()" disabled>Back</button>
+                        <div class="submitbutton">
+                            <button class="s1" id="s0" type="button" onclick="bck()" disabled> Back</button>
                             <button class="s1" id="s1" type="button" onclick="nxt()">Next >></button>
-                            <button class="s1" id="s2" type="button" onclick="nxt()" disabled>--Submit--</button>
+                            <button class="s1" id="s2" type="button" onclick="nxt()" disabled>Submit</button>
                         </div>
                     </div>
                 </div>
@@ -133,10 +133,10 @@
                         </div>
                     </div>
                     <div class="modal-footer4">
-                        <div>
+                        <div class="submitbutton">
                             <button class="s1" id="v0" type="button" onclick="bck()" disabled>Back</button>
                             <button class="s1" id="v1" type="button" onclick="nxt1()">Next >></button>
-                            <button class="s1" id="v2" type="button" onclick="nxt1()" disabled>--Submit--</button>
+                            <button class="s1" id="v2" type="button" onclick="nxt1()" disabled>Submit</button>
                         </div>
                     </div>
                 </div>
@@ -156,10 +156,10 @@
                         </div>
                     </div>
                     <div class="modal-footer5">
-                        <div>
+                        <div class="submitbutton"> 
                             <button class="s1" id="f0" type="button" onclick="bck()" disabled>Back</button>
                             <button class="s1" id="f1" type="button" onclick="nxt2()">Next >></button>
-                            <button class="s1   " id="f2" type="button" onclick="nxt2()" disabled>--Submit--</button>
+                            <button class="s1   " id="f2" type="button" onclick="nxt2()" disabled>Submit</button>
                         </div>
                     </div>
                 </div>
@@ -210,10 +210,6 @@
                     <h3>ASSES DECISION :</h3>
                     <P class="content" id="p9">asses decision</P>
                     </p>
-                    <p class="out">
-                        <h3>PREVIEW OR BACK :</h3>
-                        <P class="content" id="p10">preview or back button </P>
-                        </p>
                 </div>
 
             </div>

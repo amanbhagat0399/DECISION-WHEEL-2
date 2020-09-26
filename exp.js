@@ -14,9 +14,7 @@ myobj =
 
   "Decision": "this is the decision taken by user",
 
-  "assessdecisison": " for decision assesment",
-  
-  "wip" : "not yet decided"
+  "assessdecisison": " for decision assesment"
 }
 
 var questions = [" 1. What is Problem ?",
@@ -27,11 +25,13 @@ var questions = [" 1. What is Problem ?",
   "6.  Anything More you want to share ?",
   "7. Who Can Help ?",
   "8. what is your Decision ?",
-  "9. Assess Decision",
-  "10. not decide yet"];
+  "9. Assess Decision"];
 
 var flag = 0;
 
+function submission(){
+  alert("your data is Submitted")
+}
 // ##########################################################################################
 //--------------------------------------------------------------------------------------------
 // Get the modal
@@ -48,7 +48,7 @@ function show(btn) {
   var num = parseInt(str1.charAt(1)) + 1;
   var str2 = num.toString();
   var nid = 'b'.concat(str2);
-  if(str1=="b10")
+  if(str1=="b9")
   {
     nid="b11";
   }
@@ -56,18 +56,8 @@ function show(btn) {
   var question = questions[qno];
   flag = parseInt(str1.charAt(1));
 
-  if(str1=="b10")
-  {
-    flag=10;
-  }
-
   var x = document.getElementById("q").innerHTML = question;
   document.getElementById("txtarea").value = "";
-  if(str1=="b10")
-  {
-    flag=10;
-    document.getElementById("q").innerHTML = questions[flag-1];
-  }
 
   modal.style.display = "block";
   document.getElementById(nid).disabled = false;
@@ -211,7 +201,6 @@ function show3(btn) {
   var qno = parseInt(str1.charAt(1)) - 1;
   var question = questions[qno];
   flag = parseInt(str1.charAt(1));
-
   var x = document.getElementById("q3").innerHTML = question;
   nxt();
 
@@ -504,7 +493,6 @@ function changehtml() {
   document.getElementById("p7").innerHTML = myobj.whocanhelp;
   document.getElementById("p8").innerHTML = myobj.Decision;
   document.getElementById("p9").innerHTML = myobj.assessdecisison;
-  document.getElementById("p10").innerHTML = myobj.wip;
   modal6.style.display = "block";
 }
 
