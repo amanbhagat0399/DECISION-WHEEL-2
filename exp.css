@@ -559,7 +559,17 @@ body {
     background-color: #4CAF50;
     color: white;
   }
-
+  .s1{
+    border: 5px solid #485048;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    margin:auto;
+    display:inline;
+    padding: 2px 16px;
+  } 
+  
 
 
   /*_______________________________#######################_________________________________*/
